@@ -47,7 +47,6 @@ fi
 
 # FUNCTIONS
 push_initialize () {
-
     # Go to local Git repo directory
     cd $personal_git_dir || exit
 
@@ -89,7 +88,6 @@ pull_initialize () {
 }
 
 push () {
-
     # Go to local Git repo directory
     cd $personal_git_dir || exit
 
@@ -118,7 +116,7 @@ push () {
 }
 
 pull () {
-        # Go to Pi-hole directory, exit if doesn't exist
+    # Go to Pi-hole directory, exit if doesn't exist
     cd $personal_git_dir || exit
 
     # Update local Git repo from remote Git repo
@@ -149,6 +147,7 @@ if [ -z "$1" ]; then
     echo "Missing command line option. Try --push, --pull, or --help."
     exit 1
 fi
+
 # Determine which action to perform (InitPush, InitPull, Push, Pull, or Help)
 for arg in "$@"
 do
