@@ -188,13 +188,13 @@ Examples:
   'pihole-cloudsync --push' will push (upload) your lists to a Git repo
   'pihole-cloudsync --pull' will pull (download) your lists from a Git repo
 
-Project Home: https://github.com/stevejenkins/pihole-cloudsync
+Project Home: https://github.com/simphide/pihole-cloudsync
 EOF
 
     # Version - Displays version number
     elif [ "$arg" == "--version" ] || [ "$arg" == "-v" ]; then
         echo 'pihole-cloudsync v'$version' - Updated '"$update";
-        echo 'https://github.com/stevejenkins/pihole-cloudsync';
+        echo 'https://github.com/simphide/pihole-cloudsync';
 
     # Invalid command line option was passed
     else
